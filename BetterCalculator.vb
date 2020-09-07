@@ -37,6 +37,7 @@ Module BetterCalculator
                     Console.WriteLine("Press enter to close this window")
                     Console.ReadLine()
                     End
+
                     'display first number or prompt to enter a whole number
                 Else
                     Try
@@ -53,6 +54,7 @@ Module BetterCalculator
             promptUser = True
 
             While promptUser = True
+                Console.WriteLine("Choose a number:")
                 userInput = Console.ReadLine()
                 'perform quit
                 If userInput = "q" Then
@@ -62,6 +64,7 @@ Module BetterCalculator
                     Console.WriteLine("Press enter to close this window")
                     Console.ReadLine()
                     End
+
                     'display second number or prompt to enter a whole number
                 Else
                     Try
@@ -74,6 +77,7 @@ Module BetterCalculator
                     End Try
                 End If
             End While
+
             promptUser = True
             'promp user to select what math function is wanted
 retryOptions:
